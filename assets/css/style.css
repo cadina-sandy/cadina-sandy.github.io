@@ -1,0 +1,338 @@
+/* =========================================
+   ESTILOS GENERALES (FULL SCREEN)
+   ========================================= */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff; /* Fondo blanco */
+}
+
+/* Barra de Navegación */
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 1rem 4%; /* Margen lateral adaptable */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.portfolio-btn {
+    background-color: #f3a661; /* Color naranja del CV */
+    padding: 6px 15px;
+    border-radius: 4px;
+    color: white !important;
+}
+
+/* Línea decorativa superior */
+.top-bar {
+    height: 10px;
+    background-color: #ffd8a8;
+    width: 100%;
+}
+
+/* Contenedor Principal Adaptable */
+.container {
+    width: 100%;
+    max-width: 100%; 
+    margin: 0;
+    padding: 40px 4%; 
+    box-sizing: border-box;
+}
+
+/* =========================================
+   CABECERA (HEADER)
+   ========================================= */
+.cv-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 50px;
+    flex-wrap: wrap; /* Para móviles */
+}
+
+.contact-info {
+    flex: 1;
+    min-width: 300px;
+}
+
+.contact-info h1 {
+    margin: 0;
+    font-size: 28pt;
+    font-weight: normal;
+    color: #444;
+}
+
+.job-title {
+    font-size: 22pt;
+    color: #f3a661;
+    margin: 5px 0 15px 0;
+}
+
+.contact-details {
+    font-size: 11pt;
+    color: #666;
+}
+
+.contact-details p {
+    margin: 3px 0;
+}
+
+.foto-perfil {
+    width: 130px;
+    height: 160px;
+    background-color: #fbe5d6; 
+    border: 1px solid #e0e0e0;
+    overflow: hidden; 
+    padding: 0;       
+    display: flex;    
+    align-items: center;
+    justify-content: center;
+}
+
+
+.photo-perfil img {
+    width: 100%;       
+    height: 100%;      
+    object-fit: cover; 
+    display: block;    
+}
+
+/* =========================================
+   SECCIONES Y CONTENIDO
+   ========================================= */
+h2 {
+    color: #f3a661;
+    font-size: 16pt;
+    text-transform: uppercase;
+    border-bottom: 2px solid #ffd8a8; /* Línea que cruza la pantalla */
+    padding-bottom: 8px;
+    margin-top: 40px;
+    letter-spacing: 1px;
+}
+
+.item {
+    margin-bottom: 30px;
+}
+
+.item-header {
+    font-size: 13pt;
+    margin-bottom: 5px;
+}
+
+.company {
+    font-weight: bold;
+}
+
+.position {
+    font-style: italic;
+    color: #666;
+}
+
+.date {
+    font-size: 10pt;
+    color: #999;
+    margin-bottom: 10px;
+}
+
+ul {
+    padding-left: 20px;
+    font-size: 11pt;
+}
+
+li {
+    margin-bottom: 6px;
+}
+
+.text-block {
+    font-size: 11pt;
+    max-width: 900px; /* Para que el texto no sea difícil de leer en pantallas gigantes */
+}
+
+/* Idiomas en formato horizontal */
+.lang-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.lang-list li::before {
+    content: "• ";
+    color: #f3a661;
+    font-weight: bold;
+    font-size: 14pt;
+}
+
+/* =========================================
+   FOOTER (PIE DE PÁGINA)
+   ========================================= */
+.cv-footer {
+    background-color: #333;
+    color: #ccc;
+    text-align: center;
+    padding: 30px 4%;
+    margin-top: 60px;
+    font-size: 10pt;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* =========================================
+   ADAPTABILIDAD (MOBILE)
+   ========================================= */
+@media (max-width: 768px) {
+    .cv-header {
+        flex-direction: column-reverse; /* Foto arriba en móviles */
+        gap: 20px;
+    }
+    
+    .contact-info h1 {
+        font-size: 22pt;
+    }
+
+    .nav-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .lang-list {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* =========================================
+   ESTILOS ESPECÍFICOS PARA EL PORTAFOLIO
+   ========================================= */
+
+/* Cuadrícula de la Galería */
+.gallery-grid {
+    display: grid;
+    /* Crea columnas automáticas de mínimo 300px que llenan el ancho total */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+    width: 100%;
+}
+
+/* Tarjeta de Proyecto */
+.work-card {
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.3s ease; /* Suavidad al pasar el mouse */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Efecto Hover (al pasar el ratón) */
+.work-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    border-color: #f3a661;
+}
+
+/* Contenedor de Imagen del Proyecto */
+.work-image {
+    width: 100%;
+    height: 220px;
+    background-color: #fbe5d6; /* Color crema del CV original */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f3a661;
+    font-weight: bold;
+    font-size: 14pt;
+    text-transform: uppercase;
+    border-bottom: 1px solid #eee;
+}
+
+
+.work-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.work-info {
+    padding: 25px;
+    flex-grow: 1;
+}
+
+.work-info h3 {
+    margin: 0 0 12px 0;
+    color: #333;
+    font-size: 16pt;
+    border: none; 
+}
+
+.work-info p {
+    font-size: 11pt;
+    color: #666;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Ajustes de Adaptabilidad para la Galería */
+@media (max-width: 600px) {
+    .gallery-grid {
+        grid-template-columns: 1fr; /* Una sola columna en pantallas muy pequeñas */
+        padding: 0;
+    }
+    
+    .container {
+        padding: 20px 5%;
+    }
+}
+
+/* estilos de portafolio para la galeria */
+.work-image {
+    width: 100%;
+    height: 200px; 
+    background-color: #fbe5d6;
+    overflow: hidden; 
+    display: block; 
+}
+
+/* Hace que la imagen del proyecto sea adaptable */
+.work-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    object-position: center; 
+    transition: transform 0.5s ease; 
+}
+
+/* Efecto visual: la imagen se agranda un poquito al pasar el mouse */
+.work-card:hover .work-image img {
+    transform: scale(1.1);
+}
