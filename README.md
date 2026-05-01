@@ -1,19 +1,40 @@
-# cadina-sandy.github.io 🌐 CV & Portafolio - Sandy Cadín Azócar
+# cadina-sandy.github.io 🌐 CV & 💼 Portafolio Web - Sandy Cadín Azócar
 
+Este proyecto corresponde a mi portafolio personal desarrollado como parte de mi formación en desarrollo Front-end.
 
-Bienvenido/a a mi sitio web profesional 👋  
-Aquí encontrarás mi currículum y una selección de mis proyectos como diseñadora UX/UI y desarrolladora Front-end.
-
+## 🚀 Ver sitio en vivo
+👉 https://cadina-sandy.github.io/
 
 ---
-Mi portafolio link principal 
-https://cadina-sandy.github.io/portafolio.html
-<!-- Link a los repos de los otros trabajos-->
-<!-- Link 1: https://cadina-sandy.github.io/primer-cv-html/-->
-<!-- Link 2: https://cadina-sandy.github.io/landing-page-decohogar/-->
-<!-- Link 3: https://cadina-sandy.github.io/iguana-flex/-->
-<!-- Link 4: https://cadina-sandy.github.io/cuppon-bootstrap/-->
 
-<!-- Fork de repositorios de Compañeros -->
-<!-- Fork 1 : Repositorio de  link: -->
-<!-- Fork 2 : Repositorio de  link: -->
+## 📌 Sobre el proyecto
+
+Este sitio presenta mi currículum y una galería de proyectos realizados utilizando tecnologías base del desarrollo web.
+
+Incluye:
+- Página principal con CV
+- Sección de portafolio con proyectos
+- Navegación entre secciones
+
+---
+
+## 📂 Proyectos incluidos
+
+🔹 [CV HTML](https://cadina-sandy.github.io/primer-cv-html/)  
+🔹 [Landing Page](https://cadina-sandy.github.io/landing-page-decohogar/)  
+🔹 [Iguana Flex](https://cadina-sandy.github.io/iguana-flex/)  
+🔹 [Cuppon Bootstrap](https://cadina-sandy.github.io/cuppon-bootstrap/)
+
+---
+
+
+## 📬 Contacto
+
+📧 cadin.a.sandy@gmail.com  
+📍 Santiago, Chile
+
+---
+## 📬 Fork de Compañeros
+ Fork 1 : Repositorio de  link: https://github.com/danielamontecinoslarrain/danielamontecinoslarrain.github.io
+
+ Fork 2 : Repositorio de  link: https://github.com/Camilo-Bastian-Sanchez/Camilo-Bastian-Sanchez.github.io
