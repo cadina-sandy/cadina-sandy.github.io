@@ -32,7 +32,8 @@ Incluye:
 
 📧 cadin.a.sandy@gmail.com  
 📍 Santiago, Chile
-
+--
+## ZIP ADJUNTADO CON LINKS DE REPOSITORIOS NECESARIOS Y ARCHIVOS DE FORK
 ---
 ## 📬 Fork de Compañeros
  Fork 1 : Repositorio de  link: https://github.com/danielamontecinoslarrain/danielamontecinoslarrain.github.io
